@@ -1,15 +1,19 @@
 // styles
-import styles from '../styles/Result.module.scss'
+import styles from './Result.module.scss'
 
 const Result = () => {
   return (
-    <div className={styles.result}>
-      <p>Your Result</p>
-      <h1>76</h1>
-      <h3>of 100</h3>
-      <h2>Great</h2>
+    <section className={styles.result}>
+      <h2>Your Result</h2>
+      <div className={styles.score}>
+        <h3>
+          <span>76</span> of 100
+        </h3>
+      </div>
+
+      <h4>Great</h4>
       <p>Your performance exceed 65% of the people conducting the test here!</p>
-    </div>
+    </section>
   )
 }
 export default Result

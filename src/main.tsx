@@ -1,6 +1,5 @@
 // styles
 import './styles/_global.scss'
-import './styles/_typography.scss'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
