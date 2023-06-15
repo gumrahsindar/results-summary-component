@@ -29,7 +29,7 @@ const Summary = () => {
               }}
             >
               <h4>
-                <img src={item.icon} />
+                <img src={item.icon} alt={item.category} />
                 <span>{item.category}</span>
               </h4>
               <p>
