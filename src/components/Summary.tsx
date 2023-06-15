@@ -18,10 +18,11 @@ const Summary = () => {
   return (
     <section className={styles.summary}>
       <h3>Summary</h3>
-      {items &&
-        items.map((item, index: number) => (
-          <ul key={index}>
+      <ul>
+        {items &&
+          items.map((item, index: number) => (
             <li
+              key={index}
               style={{
                 color: item.color,
                 backgroundColor: `${item.color}10`,
@@ -36,8 +37,8 @@ const Summary = () => {
                 <span> / 100</span>
               </p>
             </li>
-          </ul>
-        ))}
+          ))}
+      </ul>
       <button>Continue</button>
     </section>
   )
